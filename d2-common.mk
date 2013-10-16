@@ -24,7 +24,7 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/d2-common/overlay
 
 # Boot animation and screen size
 
-ifeq ($(filter apexqtmo expressatt d2att,$(VARIENT_MODEL)),)
+ifeq ($(filter apexqtmo expressatt d2uc d2att,$(VARIENT_MODEL)),)
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
